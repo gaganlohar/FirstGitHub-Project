@@ -1,0 +1,6 @@
+num = int(input("Guess any number to check it's a Prime or not : "))
+lst = [i for i in range(2, num) if num % i == 0]
+if len(lst) == 0 and num > 1:
+    print("Prime")
+else:
+    print("Not Prime")
