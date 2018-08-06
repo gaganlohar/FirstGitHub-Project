@@ -1,0 +1,34 @@
+import random
+print("Welcome to \"Rock Paper Scissor\" Game : ")
+count = 1
+
+while True:
+    num = input("Guess any word from \"Rock Paper Scissor\" : ")
+    rnd_word = random.choice(['Rock', 'Paper', 'Scissor'])
+
+    if num == 'rock' and rnd_word == 'Paper':
+        print("You Loose Try again")
+
+    elif num == 'paper' and rnd_word == 'Scissor':
+        print("You Loose Try again")
+
+    elif num == 'scissor' and rnd_word == 'Rock':
+        print("You Loose Try again")
+
+    elif num == rnd_word:
+        print("It's tie Try again")
+
+    elif num != "rock" and num != "paper" and num != "scissor":
+        print("Invalid text Try again")
+
+    else:
+        print("Hurray! You win")
+        print("You have tried " + str(count) + " times ")
+        val = input("Want to play again \nEnter \"Y\" to play again or Press \"N\" : ")
+        if val == "Y" or val == "y":
+            continue
+        else:
+            print("Thank You for playing! \nSee you next time ")
+        break
+
+    count += 1       
