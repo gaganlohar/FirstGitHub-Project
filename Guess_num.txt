@@ -1,0 +1,16 @@
+def find_num(ordered_list, element_to_find):
+    if element_to_find in ordered_list:
+        return True
+    return False
+
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+num = int(input("Guess any number : "))
+print(find_num(lst, num))
+
+OUTPUT  :                                                 
+
+Guess any number : 2, 13
+True, False
+
+

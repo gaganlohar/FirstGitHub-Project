@@ -1,0 +1,86 @@
+print("""*** Welcome to Python Calculator ***
+        (+) --> ADD
+        (-) --> SUB
+        (*) --> MULTIPLICATION
+        (/) --> DIVISION
+        (%) --> MODULO
+        (**) --> EXPONENT
+        """)
+
+
+result = int(input("Enter first number : "))
+
+while True:
+    val = input("Enter mode : ")
+    num = int(input("Enter next number : "))
+
+    if val == '+':
+        result += num
+        print("Your result is = " + str(result))
+        continue
+
+    elif val == '-':
+
+        result -= num
+        print("Your result is = " + str(result))
+        continue
+
+    elif val == '*':
+
+        result *= num
+        print("Your result is = " + str(result))
+        continue
+
+    elif val == '/':
+
+        result /= num
+        print("Your result is = " + str(result))
+        continue
+
+    elif val == '%':
+
+        result %= num
+        print("Your result is = " + str(result))
+        continue
+
+    elif val == '**':
+
+        result **= num
+        print("Your result is = " + str(result))
+        continue
+
+    else:
+        print("Thank You!")
+
+OUTPUT  :                                                 
+
+
+*** Welcome to Python Calculator ***
+        (+) --> ADD
+        (-) --> SUB
+        (*) --> MULTIPLICATION
+        (/) --> DIVISION
+        (%) --> MODULO
+        (**) --> EXPONENT
+        
+Enter first number : 16
+Enter mode : +
+Enter next number : 16
+Your result is = 32
+Enter mode : /
+Enter next number : 2
+Your result is = 16.0
+Enter mode : -
+Enter next number : 8
+Your result is = 8.0
+Enter mode : *
+Enter next number : 4
+Your result is = 32.0
+Enter mode : %
+Enter next number : 5
+Your result is = 2.0
+Enter mode : **
+Enter next number : 3
+Your result is = 8.0
+
+
